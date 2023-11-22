@@ -1,23 +1,26 @@
-/*var valuePopsicle = document.getElementById("value-popsicle");
-var valueSibling = document.getElementById("value-sibling");
-var btn = document.getElementById("calculator-btn");
-var afficherResultat = document.getElementById("afficher-resultat");
+const express = require("express");
+const app = express();
+const port = 3000;
 
-const calculatePopsicle = () => {
-var siblings = parseInt(valueSibling.value);
-var popsicles = parseInt(valuePopsicle.value);
-var res = popsicles % siblings;
 
-console.log("Siblings:", siblings);
-console.log("Popsicles:", popsicles);
-console.log("Result:", res);
+app.post('/calculate', (req, res) => {
+    const {valuePopsicle, valueSibling} = req.body;
+
+    const calculatePopsicle = () => {
+    var siblings = parseInt(valueSibling.value);
+    var popsicles = parseInt(valuePopsicle.value);
+    var res = popsicles % siblings;
+
+    console.log("Siblings:", siblings);
+    console.log("Popsicles:", popsicles);
+    console.log("Result:", res);
 
 if (res === 0){
-    return afficherResultat.textContent = "Oh No! Give Away"
+    return res.json({result: "Oh No! Give Away"})
 } else {
-    return afficherResultat.textContent = "Eat Them All!"
+    return res.json({result: "Eat Them All!"}) 
 }
     
-}
-
-btn.addEventListener("click", calculatePopsicle);*/
+};
+calculatePopsicle();
+});
