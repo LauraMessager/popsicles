@@ -10,18 +10,6 @@ You want to know if the popsicles can be evenly distributed among the siblings (
 
 The user enters the amount of popsicle and how many siblings they have, clicks on "Find Out!" button. If the popsicle can evenly be distributed among the siblings a message "Oh No! Give Away" will tell you to share the popsicles. Else, this message will appear: "Eat Them All!" meaning you get to keep all the popsicles for yourself!
 
-## Project structure 
-
-| Frontend Folder | Backend Folder 
-|--|--|--|
-| index.html | index.js  |   |
-| style.css | package-lock.json |   |
-| clientside.js| package.json |    |
-| | .gitignore |   |
-| | node modules folder |   |
-
-
-
 ## Frontend
 
 <ins>index.html</ins>
