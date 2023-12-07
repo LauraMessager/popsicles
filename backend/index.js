@@ -1,7 +1,7 @@
-const express = require("express"); // framework
-const cors = require('cors'); // ??
-const bodyParser = require('body-parser'); // ??
-const app = express(); // l'app va tourner sur le port 3000
+const express = require("express");
+const cors = require('cors');
+const bodyParser = require('body-parser'); 
+const app = express(); 
 const port = 3001;
 
 app.use(bodyParser.urlencoded({ extended: true }));

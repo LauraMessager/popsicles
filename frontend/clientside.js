@@ -1,5 +1,3 @@
-//document.addEventListener('DOMContentLoaded', () => {
-
 document.getElementById('calculator-btn').addEventListener('click', () => {
     const valuePopsicle = document.getElementById('value-popsicle').value;
     const valueSibling = document.getElementById('value-sibling').value;
@@ -23,4 +21,3 @@ document.getElementById('calculator-btn').addEventListener('click', () => {
     })
     .catch(error => console.error('Error:', error));
 });
-//});
